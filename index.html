@@ -274,7 +274,46 @@
             font-size: 1rem;
             color: #ff0077;
         }
-        /* From Uiverse.io by marcelodolza, warna disesuaikan dengan tema neon pink-ungu */
+        /* Tombol send message tanpa background kotak tumpul, hanya tombol elegan */
+        .button {
+            background: linear-gradient(90deg, #ff0077, #7700ff) !important;
+            border: none !important;
+            box-shadow: none !important;
+            color: #fff;
+            border-radius: 9999px !important;
+            min-width: unset;
+            padding: 0.5em 1.3em;
+            height: auto;
+            font-size: 1rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+            transition: color 0.3s, background 0.3s;
+        }
+        .button .outline,
+        .button::before,
+        .button::after {
+            display: none !important;
+        }
+        .button .icon svg {
+            color: #fff;
+            font-size: 1em;
+            margin-right: 0.5em;
+        }
+        .button:hover,
+        .button:focus {
+            background: linear-gradient(90deg, #7700ff, #ff0077) !important;
+            color: #fff;
+        }
+        .state p span {
+            color: inherit;
+        }
+        .button:hover p span,
+        .button:focus p span {
+            color: #fff;
+        }
+        }
         .button {
         --primary: #ff0077; /* Pink neon sesuai tema */
         --neutral-1: #333; /* Abu-abu gelap sebagai cadangan */
